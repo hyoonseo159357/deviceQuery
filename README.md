@@ -14,7 +14,7 @@
 <추가해준 부분 간단히>
 
 ```
- #include <fstream> 
+#include <fstream> 
 std::ofstream myfile;
 myfile.open ("devicequery.csv");
 myfile << "Maximum Texture Dimension Size (x,y,z)," << deviceProp.maxTexture1D;
@@ -23,10 +23,12 @@ myfile.close();
 
   
 <CSV 파일 생성하고 권한설정>
-  
-printf("hohohohohoho");
-printf("%d",deviceProp.multiProcessorCount);
- 
+```
+sudo touch devicequery.csv // devicequery 값을 저장해줄 csv 파일 생성
+sudo chmod ugo+rwx devicequery.csv // read only -> write 도 가능하게 만들어주기
+// 강제저장은 w!
+``` 
+
   
   
   
