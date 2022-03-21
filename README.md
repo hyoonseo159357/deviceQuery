@@ -19,6 +19,7 @@ sudo chmod ugo+rwx devicequery.csv // read only -> write & read only
 2. make sudo ( 에러나면 sudo make clean )
 3. ./deviceQuery
 
+
 < 추가해준 부분 간단히 >
 
 ```
