@@ -4,13 +4,13 @@
 - Outputcsv_deviceQuery : deviceQuery.cpp file that saves the devicequery result as csv
 
 
-<compile>
+< Compile >
 
 1. deviceQuery.cpp 수정하기
 2. make sudo ( 에러나면 sudo make clean )
 3. ./deviceQuery
 
-<추가해준 부분 간단히>
+< 추가해준 부분 간단히 >
 
 ```
 #include <fstream> 
