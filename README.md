@@ -13,12 +13,14 @@
 
 <추가해준 부분 간단히>
 
-''' #include <fstream> 
+```
+ #include <fstream> 
 std::ofstream myfile;
 myfile.open ("devicequery.csv");
 myfile << "Maximum Texture Dimension Size (x,y,z)," << deviceProp.maxTexture1D;
 myfile.close();
-  '''
+```
+
   
 <CSV 파일 생성하고 권한설정>
   
