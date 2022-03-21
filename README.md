@@ -1,6 +1,5 @@
-# deviceQuery
+# deviceQuery 결과 csv 로 저장
 
-결과출력용
 - Original_deviceQuery : 코드수정안한 오리지널 파일 (위치는 우분투기준 /usr/local/cuda-11.4/samples/1_Utilities/deviceQuery)
 - Outputcsv_deviceQuery : 결과 csv파일로 출력하게 수정해준 deviceQuery.cpp
 
