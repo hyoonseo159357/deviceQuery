@@ -178,12 +178,12 @@ int main(int argc, char **argv) {
         deviceProp.maxTexture1D, deviceProp.maxTexture2D[0],
         deviceProp.maxTexture2D[1], deviceProp.maxTexture3D[0],
         deviceProp.maxTexture3D[1], deviceProp.maxTexture3D[2]);
-    myfile << "Maximum Texture Dimension Size (x,y,z) 1D," << deviceProp.maxTexture1D << "\n";
-    myfile << "Maximum Texture Dimension Size (x,y,z) 2D[0]," << deviceProp.maxTexture2D[0] << "\n";
-    myfile << "Maximum Texture Dimension Size (x,y,z) 2D[1]," << deviceProp.maxTexture2D[1] << "\n";
-    myfile << "Maximum Texture Dimension Size (x,y,z) 3D[0]," << deviceProp.maxTexture3D[0] << "\n";
-    myfile << "Maximum Texture Dimension Size (x,y,z) 3D[1]," << deviceProp.maxTexture3D[1] << "\n";
-    myfile << "Maximum Texture Dimension Size (x,y,z) 3D[2]," << deviceProp.maxTexture3D[2] << "\n";
+    myfile << "Maximum Texture Dimension Size (xyz) 1D," << deviceProp.maxTexture1D << "\n";
+    myfile << "Maximum Texture Dimension Size (xyz) 2D[0]," << deviceProp.maxTexture2D[0] << "\n";
+    myfile << "Maximum Texture Dimension Size (xyz) 2D[1]," << deviceProp.maxTexture2D[1] << "\n";
+    myfile << "Maximum Texture Dimension Size (xyz) 3D[0]," << deviceProp.maxTexture3D[0] << "\n";
+    myfile << "Maximum Texture Dimension Size (xyz) 3D[1]," << deviceProp.maxTexture3D[1] << "\n";
+    myfile << "Maximum Texture Dimension Size (xyz) 3D[2]," << deviceProp.maxTexture3D[2] << "\n";
 
     printf(
         "  Maximum Layered 1D Texture Size, (num) layers  1D=(%d), %d layers\n",
@@ -228,19 +228,19 @@ int main(int argc, char **argv) {
            deviceProp.maxThreadsPerBlock);
     myfile << "Maximum number of threads per block," << deviceProp.maxThreadsPerBlock << "\n";
 
-    printf("  Max dimension size of a thread block (x,y,z): (%d, %d, %d)\n",
+    printf("  Max dimension size of a thread block (xyz): (%d, %d, %d)\n",
            deviceProp.maxThreadsDim[0], deviceProp.maxThreadsDim[1],
            deviceProp.maxThreadsDim[2]);
-    myfile << "Max dimension size of a thread block (x,y,z) x," << deviceProp.maxThreadsDim[0] << "\n";
-    myfile << "Max dimension size of a thread block (x,y,z) y," << deviceProp.maxThreadsDim[1] << "\n";
-    myfile << "Max dimension size of a thread block (x,y,z) z," << deviceProp.maxThreadsDim[2] << "\n";
+    myfile << "Max dimension size of a thread block (xyz) x," << deviceProp.maxThreadsDim[0] << "\n";
+    myfile << "Max dimension size of a thread block (xyz) y," << deviceProp.maxThreadsDim[1] << "\n";
+    myfile << "Max dimension size of a thread block (xyz) z," << deviceProp.maxThreadsDim[2] << "\n";
 
-    printf("  Max dimension size of a grid size    (x,y,z): (%d, %d, %d)\n",
+    printf("  Max dimension size of a grid size    (xyz): (%d, %d, %d)\n",
            deviceProp.maxGridSize[0], deviceProp.maxGridSize[1],
            deviceProp.maxGridSize[2]);
-    myfile << "Max dimension size of a grid size    (x,y,z) x," << deviceProp.maxGridSize[0] << "\n";
-    myfile << "Max dimension size of a grid size    (x,y,z) y," << deviceProp.maxGridSize[1] << "\n";
-    myfile << "Max dimension size of a grid size    (x,y,z) z," << deviceProp.maxGridSize[2] << "\n";
+    myfile << "Max dimension size of a grid size    (xyz) x," << deviceProp.maxGridSize[0] << "\n";
+    myfile << "Max dimension size of a grid size    (xyz) y," << deviceProp.maxGridSize[1] << "\n";
+    myfile << "Max dimension size of a grid size    (xyz) z," << deviceProp.maxGridSize[2] << "\n";
 
     printf("  Maximum memory pitch:                          %zu bytes\n",
            deviceProp.memPitch);
@@ -409,3 +409,4 @@ int main(int argc, char **argv) {
   // finish
   exit(EXIT_SUCCESS);
 }
+
