@@ -4,7 +4,7 @@
 - Outputcsv_deviceQuery : 결과 csv파일로 출력하게 수정해준 deviceQuery.cpp
 
 
-<수정후 확인과정>
+<수정후 컴파일>
 
 1. deviceQuery.cpp 수정하기
 2. make sudo ( 에러나면 sudo make clean )
