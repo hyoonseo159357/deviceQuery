@@ -133,12 +133,15 @@ int main(int argc, char **argv) {
     // This is supported in CUDA 5.0 (runtime API device properties)
     printf("  Memory Clock rate:                             %.0f Mhz\n",
            deviceProp.memoryClockRate * 1e-3f);
+    myfile << "Memory Clock rate," << deviceProp.memoryClockRate * 1e-3f << "\n";
     printf("  Memory Bus Width:                              %d-bit\n",
            deviceProp.memoryBusWidth);
-
+    myfile << "Memory Bus Width," << deviceProp.memoryBusWidth * 1e-3f << "\n";
     if (deviceProp.l2CacheSize) {
       printf("  L2 Cache Size:                                 %d bytes\n",
              deviceProp.l2CacheSize);
+      myfile << "L2 Cache Size," << deviceProp.l2CacheSize << "\n";
+
     }
 
 #else
@@ -193,9 +196,9 @@ int main(int argc, char **argv) {
         "layers\n",
         deviceProp.maxTexture2DLayered[0], deviceProp.maxTexture2DLayered[1],
         deviceProp.maxTexture2DLayered[2]);
-    myfile << "Maximum Layered 1D Texture Size num 2D[0]," << deviceProp.maxTexture2DLayered[0] << "\n";
-    myfile << "Maximum Layered 1D Texture Size num 2D[1]," << deviceProp.maxTexture2DLayered[1] << "\n";
-    myfile << "Maximum Layered 1D Texture Size num layers," << deviceProp.maxTexture2DLayered[2] << "\n";
+    myfile << "Maximum Layered 2D Texture Size num 2D[0]," << deviceProp.maxTexture2DLayered[0] << "\n";
+    myfile << "Maximum Layered 2D Texture Size num 2D[1]," << deviceProp.maxTexture2DLayered[1] << "\n";
+    myfile << "Maximum Layered 2D Texture Size num layers," << deviceProp.maxTexture2DLayered[2] << "\n";
 
     printf("  Total amount of constant memory:               %zu bytes\n",
            deviceProp.totalConstMem);
@@ -306,7 +309,7 @@ int main(int argc, char **argv) {
     myfile << "Device PCI location ID," << deviceProp.pciDeviceID << "\n";
     myfile.close();
 
-    
+
     const char *sComputeMode[] = {
         "Default (multiple host threads can use ::cudaSetDevice() with device "
         "simultaneously)",
