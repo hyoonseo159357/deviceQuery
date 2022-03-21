@@ -20,6 +20,7 @@ myfile << "Maximum Texture Dimension Size (x,y,z)," << deviceProp.maxTexture1D;
 myfile.close();
   
 <CSV 파일 생성하고 권한설정>
+  
 printf("hohohohohoho");
 printf("%d",deviceProp.multiProcessorCount);
  
