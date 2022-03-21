@@ -25,7 +25,7 @@ myfile.close();
 <CSV 파일 생성하고 권한설정>
 ```
 sudo touch devicequery.csv // devicequery 값을 저장해줄 csv 파일 생성
-sudo chmod ugo+rwx devicequery.csv // read only -> write 도 가능하게 만들어주기
+sudo chmod ugo+rwx devicequery.csv // read only -> write & read only
 // 강제저장은 w!
 ``` 
 
