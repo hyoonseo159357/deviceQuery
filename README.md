@@ -1,10 +1,10 @@
 # save devicequery result as csv
 
-- Original_deviceQuery : 코드수정안한 오리지널 파일 (위치는 우분투기준 /usr/local/cuda-11.4/samples/1_Utilities/deviceQuery)
-- Outputcsv_deviceQuery : 결과 csv파일로 출력하게 수정해준 deviceQuery.cpp
+- Original_deviceQuery : origianl deviceQuery.cpp (위치는 우분투기준 /usr/local/cuda-11.4/samples/1_Utilities/deviceQuery)
+- Outputcsv_deviceQuery : deviceQuery.cpp file that saves the devicequery result as csv
 
 
-<수정후 컴파일>
+<compile>
 
 1. deviceQuery.cpp 수정하기
 2. make sudo ( 에러나면 sudo make clean )
@@ -21,7 +21,7 @@ myfile.close();
 ```
 
   
-<CSV 파일 생성하고 권한설정>
+<make csv file and permission setting>
 ```
 sudo touch devicequery.csv // devicequery 값을 저장해줄 csv 파일 생성
 sudo chmod ugo+rwx devicequery.csv // read only -> write & read only
