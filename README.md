@@ -32,7 +32,7 @@ myfile.close();
 
 마지막으로 devicequery.csv 로컬에 저장
 
-scp -i /Users/heoyunseo/desktop/aws_pem/ys.pem -r ubuntu@3.209.82.196:/usr/local/cuda-11.4/samples/1_Utilities/deviceQuery/ .
+scp -i /Users/heoyunseo/desktop/aws_pem/ys.pem -r ubuntu@1.11.11.11:/usr/local/cuda-11.4/samples/1_Utilities/deviceQuery/ .
   
   
   
