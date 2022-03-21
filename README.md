@@ -30,7 +30,7 @@ myfile << "Maximum Texture Dimension Size (x,y,z)," << deviceProp.maxTexture1D;
 myfile.close();
 ```
 
-마지막으로 devicequery.csv 로컬에 저장
+finally save devicequery.csv to local
 ```
 scp -i /Users/heoyunseo/desktop/aws_pem/ys.pem -r ubuntu@1.11.11.11:/usr/local/cuda-11.4/samples/1_Utilities/deviceQuery/ .
 ```  
