@@ -4,6 +4,13 @@
 - Outputcsv_deviceQuery : deviceQuery.cpp file that saves the devicequery result as csv
 
 
+< Make csv file and permission setting >
+  
+```
+sudo touch devicequery.csv // devicequery 값을 저장해줄 csv 파일 생성
+sudo chmod ugo+rwx devicequery.csv // read only -> write & read only
+// 강제저장은 w!
+``` 
 
 
 < Compile >
@@ -23,14 +30,6 @@ myfile.close();
 ```
 
   
-< Make csv file and permission setting >
-  
-```
-sudo touch devicequery.csv // devicequery 값을 저장해줄 csv 파일 생성
-sudo chmod ugo+rwx devicequery.csv // read only -> write & read only
-// 강제저장은 w!
-``` 
-
   
   
   
