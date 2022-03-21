@@ -21,7 +21,7 @@ myfile.close();
 ```
 
   
-<make csv file and permission setting>
+< Make csv file and permission setting >
   
 ```
 sudo touch devicequery.csv // devicequery 값을 저장해줄 csv 파일 생성
