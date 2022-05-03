@@ -136,7 +136,7 @@ int main(int argc, char **argv) {
     myfile << "Memory Clock rate," << deviceProp.memoryClockRate * 1e-3f << "\n";
     printf("  Memory Bus Width:                              %d-bit\n",
            deviceProp.memoryBusWidth);
-    myfile << "Memory Bus Width," << deviceProp.memoryBusWidth * 1e-3f << "\n";
+    myfile << "Memory Bus Width," << deviceProp.memoryBusWidth << "\n";
     if (deviceProp.l2CacheSize) {
       printf("  L2 Cache Size:                                 %d bytes\n",
              deviceProp.l2CacheSize);
