@@ -31,7 +31,7 @@ myfile.close();
 
 finally save the devicequery.csv locally
 ```
-scp -i /Users/heoyunseo/desktop/aws_pem/ys.pem -r ubuntu@1.11.11.11:/usr/local/cuda-11.4/samples/1_Utilities/deviceQuery/devicequery.csv  .
+scp -i /Users/heoyunseo/desktop/aws_pem/ys-oregon2 -r ubuntu@1.11.11.11:/usr/local/cuda-11.4/samples/1_Utilities/deviceQuery/devicequery.csv  .
 ```  
   
   
